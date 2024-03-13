@@ -1,94 +1,98 @@
-var tl = gsap.timeline({
-    scrollTrigger : {
-        trigger: "#home",
-        start: "top top",
-        end: "bottom -250%",
-        scrub: 3,
-        // markers: true,
-        pin: true,
-    }
-})
+function home() {
+    var tl = gsap.timeline({
+        scrollTrigger : {
+            trigger: "#home",
+            start: "top top",
+            end: "bottom -250%",
+            scrub: 3,
+            // markers: true,
+            pin: true,
+        }
+    })
+    
+    tl
+    .to("#circle #cbtm img", {
+        rotate: -180,
+        duration: 1,
+        stagger: .05,
+        ease: Power1,
+    }, "sameFlag")                                     // give same flag property to run at same time . one bullshit ques. it is necces. to name it only same Flag --> No.
+    .to("#cimage img", {
+        scale: 0,
+        duration: 1,
+        // stagger: .1,
+        ease: Power1,
+    }, "sameFlag")
+    .to("#centerimg h6", {
+        opacity: 0,
+        duration: .2,
+        stagger: .1,
+        ease: Power1,
+    }, "sameFlag")
+    .to("#circle img", {
+        scale: 0,
+        duration: 1,
+        // stagger: .1,
+        ease: Power1,
+    }, "sameFlag")
+    .to("#overlay #glry", {
+        y:150,
+        opacity: 0,
+        duration: 1,
+        // stagger: .1,
+        ease: Power1,
+    }, "sameFlag")
+    .to("#gola", {
+        top: "50%",
+        scale: 1.8,
+        duration: .7,
+        // stagger: .1,
+        ease: Power1,
+    }, "sameFlag")
+    .to("#smcircle", {
+        scale: 0,
+        // duration: 1,
+        // stagger: .1,
+        ease: Power1,
+    }, "hello")
+    .to("#gola", {
+       opacity: 0,
+        scale: 0,
+        duration: 1,
+        // stagger: .1,
+        ease: Power1,
+    }, "hello")
+    .to("#overlay #pf", {
+        rotate: 0,
+        bottom: "2%",
+        duration: 1,
+        // stagger: .1,
+        ease: Power1,
+    }, "hello")
+    .to("#pinkbox", {
+        rotate: ("-10deg"),
+        top: "0%",
+        duration: 1,
+        ease: Power1,
+    }, "hello")
+    .to("#pinkbox", {
+        rotate: ("0deg"),
+        top: "35%",
+        duration: .7,
+        ease: Power1,
+    }, )
+    .to("#pinkbox", {
+        // opacity: 0,
+        top: "-50%",
+        duration: .2,
+        ease: Power1,
+    }, )
+    .to("#overlay", {
+        delay: .1,
+        ease: Power1,
+    })
 
-tl
-.to("#circle #cbtm img", {
-    rotate: -180,
-    duration: 1,
-    stagger: .05,
-    ease: Power1,
-}, "sameFlag")                                     // give same flag property to run at same time . one bullshit ques. it is necces. to name it only same Flag --> No.
-.to("#cimage img", {
-    scale: 0,
-    duration: 1,
-    // stagger: .1,
-    ease: Power1,
-}, "sameFlag")
-.to("#centerimg h6", {
-    opacity: 0,
-    duration: .2,
-    stagger: .1,
-    ease: Power1,
-}, "sameFlag")
-.to("#circle img", {
-    scale: 0,
-    duration: 1,
-    // stagger: .1,
-    ease: Power1,
-}, "sameFlag")
-.to("#overlay #glry", {
-    y:150,
-    opacity: 0,
-    duration: 1,
-    // stagger: .1,
-    ease: Power1,
-}, "sameFlag")
-.to("#gola", {
-    top: "50%",
-    scale: 1.8,
-    duration: .7,
-    // stagger: .1,
-    ease: Power1,
-}, "sameFlag")
-.to("#smcircle", {
-    scale: 0,
-    // duration: 1,
-    // stagger: .1,
-    ease: Power1,
-}, "hello")
-.to("#gola", {
-   opacity: 0,
-    scale: 0,
-    duration: 1,
-    // stagger: .1,
-    ease: Power1,
-}, "hello")
-.to("#overlay #pf", {
-    rotate: 0,
-    bottom: "2%",
-    duration: 1,
-    // stagger: .1,
-    ease: Power1,
-}, "hello")
-.to("#pinkbox", {
-    rotate: ("-10deg"),
-    top: "0%",
-    duration: 1,
-    ease: Power1,
-}, "hello")
-.to("#pinkbox", {
-    rotate: ("0deg"),
-    top: "35%",
-    duration: .7,
-    ease: Power1,
-}, )
-.to("#pinkbox", {
-    // opacity: 0,
-    top: "-50%",
-    // duration: .5,
-    ease: Power1,
-}, )
-
-
-// //  to make element color white
+    // //  to make element color white
 // .to ("#nav .white", {
 //     color: "white",
 //     scale: 1.2,
@@ -125,3 +129,89 @@ tl
 //     scale: 1.2,
 //     duration: .3,
 // }, "sameFlag")
+
+}
+home ()
+
+
+
+
+
+//                            second page animation
+
+var tl2 = gsap.timeline({
+    scrollTrigger : {
+        trigger: "#page2",
+        start: "top top",
+        end: "bottom -250%",
+        scrub: 3,
+        // markers: true,
+        pin: true,
+    }
+})
+
+tl2.to(".class", {
+    top: "50%",
+    stagger: .1,
+    duration: .5,
+    ease: Power1,
+})
+.to (".class", {
+    left: "50%",
+    duration: .2,
+    ease: Power1,
+})
+.to (".class", {
+    // delay: .1,
+    scale: .7,
+    duration: .4,
+    ease: Power1
+    
+})
+.to (".pu", {
+    background: "none",
+},)
+.to (".pi", {
+    // delay: .1,
+    scale: 10,
+    duration: 1,
+    ease: Power1 
+})
+.to ("#stop h1", {
+    left: "-136%",
+    // opacity:1,
+    duration: 8,
+    ease: Power1
+}, "second")
+
+.to (".pi", {
+    background: "linear-gradient(to right, #d5a7b4, #B4AAD5)",
+    duration: 8,
+    ease: Power1
+}, "second")
+.to ("#sbtm p:nth-child(1)", {
+    opacity: 0,
+    duration: 1,
+    ease: Power1
+}, "second")
+
+.to ("#sbtm p:nth-child(2)", {
+    delay: 1,
+    opacity: 1,
+    duration: 1,
+    ease: Power1
+}, "second")
+
+.to ("#n1", {
+    opacity: 0,
+    top: "-10%",
+    duration: 1,
+    ease: Power1
+}, "second")
+.to ("#n2", {
+    top: "13%",
+    delay: 1,
+    opacity: 1,
+    duration: 1,
+    ease: Power1
+}, "second")
