@@ -1,3 +1,6 @@
+
+
+//                              home page
 function home() {
     var tl = gsap.timeline({
         scrollTrigger : {
@@ -215,3 +218,120 @@ tl2.to(".class", {
     duration: 1,
     ease: Power1
 }, "second")
+  
+
+//             end  
+.to ("#n2", {
+    opacity: 0,
+    top: "-10%",
+    duration: 1,
+    ease: Power1
+},"end")
+.to ("#n3", {
+    top: "13%",
+    opacity: 1,
+    duration: 1,
+    ease: Power1
+}, "end")
+.to ("#stop .c", {
+    top: "0%",
+    stagger:.3,
+    duration: 2,
+    ease: Power1,
+}, "end")
+.to ("#stop .r", {
+    opacity: 1,
+    // stagger:.3,
+    // duration: 2,
+    ease: Power1,
+},)
+.to ("#r1", {
+    left: "-10%",
+    // stagger:.1,
+    duration: 1,
+    ease: Power1,
+}, "hor1")
+.to ("#r2", {
+    left: "10%",
+    // stagger:.1,
+    duration: 1,
+    ease: Power1,
+}, "hor1")
+.to ("#r3", {
+    left: "30%",
+    // stagger:.1,
+    duration: 1,
+    ease: Power1,
+}, "hor1")
+.to ("#r4", {
+    left: "50%",
+    // stagger:.1,
+    duration: 1,
+    ease: Power1,
+}, "hor1")
+.to ("#r5", {
+    left: "70%",
+    // stagger:.1,
+    duration: 1,
+    ease: Power1,
+}, "hor1")
+
+
+// .to ("#r1", {
+//     opacity: 0,
+//     duration: 1,
+//     ease: Power1,
+// }, "hor2")
+// .to ("#r2", {
+//     opacity: 0,
+//     duration: 1,
+//     ease: Power1,
+// }, "hor2")
+// .to ("#r3", {
+//     opacity: 0,
+//     duration: 1,
+//     ease: Power1,
+// }, "hor2")
+// .to ("#r4", {
+//     opacity: 0,
+//     duration: 1,
+//     ease: Power1,
+// }, "hor2")
+// .to ("#r5", {
+//     opacity: 0,
+//     duration: 1,
+//     ease: Power1,
+// }, "hor2")
+
+
+// for row 2
+
+.to ("#stop .l", {
+    opacity: 1,
+    ease: Power1,
+},)
+.to ("#l1", {
+    left: "-15%",
+    duration: .5,
+    ease: Power1,
+}, "hor2")
+.to ("#l2", {
+    left: "5%",
+    duration: .5,
+    ease: Power1,
+}, "hor2")
+.to ("#l3", {
+    left: "25%",
+    duration: .5,
+    ease: Power1,
+}, "hor2")
+.to ("#l4", {
+    left: "45%",
+    duration: .5,
+    ease: Power1,
+}, "hor2")
+.to ("#l5", {
+    left: "65%",
+    duration: .5,
+    ease: Power1,
+}, "hor2")

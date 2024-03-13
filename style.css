@@ -376,7 +376,6 @@ html, body {
     color: rgba(0, 0, 0, 0.864);
     
 }
-
 #n2 {
     top: "20%";
     opacity: 0;
@@ -387,8 +386,97 @@ html, body {
 }
 
 
+/* end block */
+#stop .c {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 150%;
+    z-index: 9999;
+} 
+#c1 {
+   left: 0%;
+    background-color: #D5A7B4;
+}
+#c2 {
+    left: 20%;
+    background-color: #E9BBC8;
+}
+#c3 {
+    left: 40%;
+    background-color: #F3C5D2;
+}
+#c4 {
+    left: 60%;
+    background-color: #FDCFDC;
+}
+#c5 {
+    left: 80%;
+    background-color: #FFE3F0;
+}
+
+/*   for row wise end block */
+
+#stop .r {
+    width: 20%;
+    height: 30%;
+    position: absolute;
+    top: 70%;
+    z-index: 999999;
+    opacity: 0;
+} 
+#r1 {
+   left: 0%;
+    background-color: #D5A7B4;
+}
+#r2 {
+    left: 20%;
+    background-color: #E9BBC8;
+}
+#r3 {
+    left: 40%;
+    background-color: #F3C5D2;
+}
+#r4 {
+    left: 60%;
+    background-color: #FDCFDC;
+}
+#r5 {
+    left: 80%;
+    background-color: #FFE3F0;
+}
 
 
+/*   for row2 wise end block */
+
+#stop .l {
+    width: 20%;
+    height: 15%;
+    position: absolute;
+    top: 85%;
+    z-index: 999999;
+    opacity: 0;
+} 
+#l1 {
+   left: -10%;
+    background-color: #D5A7B4;
+}
+#l2 {
+    left: 10%;
+    background-color: #E9BBC8;
+}
+#l3 {
+    left: 30%;
+    background-color: #F3C5D2;
+}
+#l4 {
+    left: 50%;
+    background-color: #FDCFDC;
+}
+#l5 {
+    left: 70%;
+    background-color: #FFE3F0;
+}
 
 
 
