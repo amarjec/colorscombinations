@@ -23,6 +23,7 @@ html, body {
     height: 100%;
     object-fit: cover;
     object-position: center;
+
 }
 #home #circle {
     width: 120vw;
@@ -130,6 +131,7 @@ html, body {
     line-height: 1.2vw;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.650);
+    pointer-events: none;
 }
 #rnavt {
     width: 6vw;
@@ -174,6 +176,7 @@ html, body {
     letter-spacing: .08vw;
     text-transform: uppercase;
     font-family: DS-Digital;
+    pointer-events: none;
 }
 
 #overlay #btmnav {
@@ -207,6 +210,7 @@ html, body {
 #centerimg h6 {
     font-size: 1vw;
     font-weight: 400;
+    pointer-events: none;
 }
 #centerimg h6:nth-child(1) {
     margin-bottom: 1vw;
@@ -272,15 +276,58 @@ html, body {
     pointer-events: none;
     z-index: 999999;
     transform-origin: 50% 0%;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255);
 }
 #pinkbox {
-    width: 20vw;
-    height: 20vw;
+    width: 30vw;
+    height: 30vw;
     background-color: #d5a7b4;
     position: absolute;
     top: 150%;
     left: 0;
     transform: translate(0, -50%);
-    z-index: 99999;
+    z-index: 99;
+    padding: 1vw 0vw;
+    pointer-events: none;
+}
+#pinkbox img {
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media Query */
+@media (max-width: 500px) { 
+    @home {
+        display: flex;
+        flex-direction: coloum;
+    }
+    
 }

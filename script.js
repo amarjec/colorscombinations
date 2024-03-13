@@ -76,18 +76,19 @@ tl
 }, "hello")
 .to("#pinkbox", {
     rotate: ("0deg"),
-    top: "50%",
+    top: "35%",
     duration: .7,
     ease: Power1,
 }, )
 .to("#pinkbox", {
-    opacity: 0,
-    top: "-30%",
-    duration: .5,
+    // opacity: 0,
+    top: "-50%",
+    // duration: .5,
     ease: Power1,
 }, )
 
-//  to make element color white
+
+// //  to make element color white
 // .to ("#nav .white", {
 //     color: "white",
 //     scale: 1.2,
@@ -95,12 +96,12 @@ tl
 // }, "sameFlag")
 
 // .to ("#rnav1", {
-//     backgroundColor: rgba(255, 255, 255, 0.090),
+//     backgroundColor: rgba(255, 255, 255, 0.000),
 //     scale: 1.2,
 //     duration: .3,
 // }, "sameFlag")
 // .to ("#rnav2", {
-//     backgroundColor: rgba(255, 255, 255, 0.250),
+//     backgroundColor: rgba(255, 255, 255, 0.200),
 //     scale: 1.2,
 //     duration: .3,
 // }, "sameFlag")
@@ -120,7 +121,7 @@ tl
 //     duration: .3,
 // }, "sameFlag")
 // .to ("#rnav6", {
-//     backgroundColor: rgba(255, 255, 255, 0.950),
+//     backgroundColor: rgba(255, 255, 255),
 //     scale: 1.2,
 //     duration: .3,
 // }, "sameFlag")
