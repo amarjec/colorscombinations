@@ -1,5 +1,3 @@
-
-
 //                              home page
 function home() {
     var tl = gsap.timeline({

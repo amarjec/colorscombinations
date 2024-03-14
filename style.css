@@ -239,6 +239,10 @@ html, body {
     bottom: 2%;
     transform: translate(-50%, 0);
     font-size: 8vw;
+<<<<<<< HEAD
+=======
+    font-family: Scto Grotest A Medium;
+>>>>>>> 91f98fdf07203d20bace705bb5e4c935a013bb80
     text-transform: uppercase;
     text-align: center;
     font-weight: 500;
@@ -634,4 +638,8 @@ html, body {
         font-size: 20vw;
         font-weight: 100;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 91f98fdf07203d20bace705bb5e4c935a013bb80
