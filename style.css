@@ -232,6 +232,7 @@ html, body {
     height: 100%;
     object-fit: cover;
 }
+
 #overlay #glry {
     position: absolute;
     left: 50%;
@@ -247,6 +248,7 @@ html, body {
     color: rgba(0, 0, 0, 0.821);
     z-index: 999999;
 }
+
 #overlay>h1#glry {
     font-family: Scto Grotesk A Medium;
 }
@@ -482,23 +484,7 @@ html, body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* again new working media query */
 /*                               media Query  --------->      for mobile devices only                     */
 @media (max-width: 500px) { 
     @home {
@@ -624,14 +610,13 @@ html, body {
     }
     #sbtm p {
         width: 95%;
-        font-size: 5vw;
+        font-size: 7vw;
         line-height: 1;
         letter-spacing: normal;
         font-weight: 600;
     }
     #sbtm #n1, #n2, #n3 {
-        font-size: 20vw;
+        font-size: 15vw;
         font-weight: 100;
     }
 }
-
