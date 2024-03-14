@@ -526,7 +526,8 @@ html, body {
         padding: 1vh 1vw;
     }
     #rnav h6 {
-        font-size: 4vw;
+        font-size: 3.5vw;
+        font-family: DS-Digital;
     }
 
     #centerimg {
