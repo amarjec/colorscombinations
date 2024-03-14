@@ -1,5 +1,3 @@
-
-
 //                              home page
 function home() {
     var tl = gsap.timeline({
@@ -39,7 +37,7 @@ function home() {
         ease: Power1,
     }, "sameFlag")
     .to("#overlay #glry", {
-        y:150,
+        y:200,
         opacity: 0,
         duration: 1,
         // stagger: .1,
@@ -67,7 +65,7 @@ function home() {
     }, "hello")
     .to("#overlay #pf", {
         rotate: 0,
-        bottom: "2%",
+        bottom: "8%",
         duration: 1,
         // stagger: .1,
         ease: Power1,
@@ -142,196 +140,199 @@ home ()
 
 //                            second page animation
 
-var tl2 = gsap.timeline({
-    scrollTrigger : {
-        trigger: "#page2",
-        start: "top top",
-        end: "bottom -250%",
-        scrub: 3,
-        // markers: true,
-        pin: true,
-    }
-})
-
-tl2.to(".class", {
-    top: "50%",
-    stagger: .1,
-    duration: .5,
-    ease: Power1,
-})
-.to (".class", {
-    left: "50%",
-    duration: .2,
-    ease: Power1,
-})
-.to (".class", {
-    // delay: .1,
-    scale: .7,
-    duration: .4,
-    ease: Power1
+function page2 () {
+    var tl2 = gsap.timeline({
+        scrollTrigger : {
+            trigger: "#page2",
+            start: "top top",
+            end: "bottom -250%",
+            scrub: 3,
+            // markers: true,
+            pin: true,
+        }
+    })
     
-})
-.to (".pu", {
-    background: "none",
-},)
-.to (".pi", {
-    // delay: .1,
-    scale: 10,
-    duration: 1,
-    ease: Power1 
-})
-.to ("#stop h1", {
-    left: "-136%",
-    // opacity:1,
-    duration: 8,
-    ease: Power1
-}, "second")
-
-.to (".pi", {
-    background: "linear-gradient(to right, #d5a7b4, #B4AAD5)",
-    duration: 8,
-    ease: Power1
-}, "second")
-.to ("#sbtm p:nth-child(1)", {
-    opacity: 0,
-    duration: 1,
-    ease: Power1
-}, "second")
-
-.to ("#sbtm p:nth-child(2)", {
-    delay: 1,
-    opacity: 1,
-    duration: 1,
-    ease: Power1
-}, "second")
-
-.to ("#n1", {
-    opacity: 0,
-    top: "-10%",
-    duration: 1,
-    ease: Power1
-}, "second")
-.to ("#n2", {
-    top: "13%",
-    delay: 1,
-    opacity: 1,
-    duration: 1,
-    ease: Power1
-}, "second")
-  
-
-//             end  
-.to ("#n2", {
-    opacity: 0,
-    top: "-10%",
-    duration: 1,
-    ease: Power1
-},"end")
-.to ("#n3", {
-    top: "13%",
-    opacity: 1,
-    duration: 1,
-    ease: Power1
-}, "end")
-.to ("#stop .c", {
-    top: "0%",
-    stagger:.3,
-    duration: 2,
-    ease: Power1,
-}, "end")
-.to ("#stop .r", {
-    opacity: 1,
-    // stagger:.3,
-    // duration: 2,
-    ease: Power1,
-},)
-.to ("#r1", {
-    left: "-10%",
-    // stagger:.1,
-    duration: 1,
-    ease: Power1,
-}, "hor1")
-.to ("#r2", {
-    left: "10%",
-    // stagger:.1,
-    duration: 1,
-    ease: Power1,
-}, "hor1")
-.to ("#r3", {
-    left: "30%",
-    // stagger:.1,
-    duration: 1,
-    ease: Power1,
-}, "hor1")
-.to ("#r4", {
-    left: "50%",
-    // stagger:.1,
-    duration: 1,
-    ease: Power1,
-}, "hor1")
-.to ("#r5", {
-    left: "70%",
-    // stagger:.1,
-    duration: 1,
-    ease: Power1,
-}, "hor1")
-
-
-// .to ("#r1", {
-//     opacity: 0,
-//     duration: 1,
-//     ease: Power1,
-// }, "hor2")
-// .to ("#r2", {
-//     opacity: 0,
-//     duration: 1,
-//     ease: Power1,
-// }, "hor2")
-// .to ("#r3", {
-//     opacity: 0,
-//     duration: 1,
-//     ease: Power1,
-// }, "hor2")
-// .to ("#r4", {
-//     opacity: 0,
-//     duration: 1,
-//     ease: Power1,
-// }, "hor2")
-// .to ("#r5", {
-//     opacity: 0,
-//     duration: 1,
-//     ease: Power1,
-// }, "hor2")
-
-
-// for row 2
-
-.to ("#stop .l", {
-    opacity: 1,
-    ease: Power1,
-},)
-.to ("#l1", {
-    left: "-15%",
-    duration: .5,
-    ease: Power1,
-}, "hor2")
-.to ("#l2", {
-    left: "5%",
-    duration: .5,
-    ease: Power1,
-}, "hor2")
-.to ("#l3", {
-    left: "25%",
-    duration: .5,
-    ease: Power1,
-}, "hor2")
-.to ("#l4", {
-    left: "45%",
-    duration: .5,
-    ease: Power1,
-}, "hor2")
-.to ("#l5", {
-    left: "65%",
-    duration: .5,
-    ease: Power1,
-}, "hor2")
+    tl2.to(".class", {
+        top: "50%",
+        stagger: .1,
+        duration: .5,
+        ease: Power1,
+    })
+    .to (".class", {
+        left: "50%",
+        duration: .2,
+        ease: Power1,
+    })
+    .to (".class", {
+        // delay: .1,
+        scale: .7,
+        duration: .4,
+        ease: Power1
+        
+    })
+    .to (".pu", {
+        background: "none",
+    },)
+    .to (".pi", {
+        // delay: .1,
+        scale: 10,
+        duration: 1,
+        ease: Power1 
+    })
+    .to ("#stop h1", {
+        left: "-180%",
+        // opacity:1,
+        duration: 8,
+        ease: Power1
+    }, "second")
+    
+    .to (".pi", {
+        background: "linear-gradient(to right, #d5a7b4, #B4AAD5)",
+        duration: 8,
+        ease: Power1
+    }, "second")
+    .to ("#sbtm p:nth-child(1)", {
+        opacity: 0,
+        duration: 1,
+        ease: Power1
+    }, "second")
+    
+    .to ("#sbtm p:nth-child(2)", {
+        delay: 1,
+        opacity: 1,
+        duration: 1,
+        ease: Power1
+    }, "second")
+    
+    .to ("#n1", {
+        opacity: 0,
+        top: "-10%",
+        duration: 1,
+        ease: Power1
+    }, "second")
+    .to ("#n2", {
+        top: "13%",
+        delay: 1,
+        opacity: 1,
+        duration: 1,
+        ease: Power1
+    }, "second")
+      
+    
+    //             end  
+    .to ("#n2", {
+        opacity: 0,
+        top: "-10%",
+        duration: 1,
+        ease: Power1
+    },"end")
+    .to ("#n3", {
+        top: "13%",
+        opacity: 1,
+        duration: 1,
+        ease: Power1
+    }, "end")
+    .to ("#stop .c", {
+        top: "0%",
+        stagger:.3,
+        duration: 2,
+        ease: Power1,
+    }, "end")
+    .to ("#stop .r", {
+        opacity: 1,
+        // stagger:.3,
+        // duration: 2,
+        ease: Power1,
+    },)
+    .to ("#r1", {
+        left: "-10%",
+        // stagger:.1,
+        duration: 1,
+        ease: Power1,
+    }, "hor1")
+    .to ("#r2", {
+        left: "10%",
+        // stagger:.1,
+        duration: 1,
+        ease: Power1,
+    }, "hor1")
+    .to ("#r3", {
+        left: "30%",
+        // stagger:.1,
+        duration: 1,
+        ease: Power1,
+    }, "hor1")
+    .to ("#r4", {
+        left: "50%",
+        // stagger:.1,
+        duration: 1,
+        ease: Power1,
+    }, "hor1")
+    .to ("#r5", {
+        left: "70%",
+        // stagger:.1,
+        duration: 1,
+        ease: Power1,
+    }, "hor1")
+    
+    
+    // .to ("#r1", {
+    //     opacity: 0,
+    //     duration: 1,
+    //     ease: Power1,
+    // }, "hor2")
+    // .to ("#r2", {
+    //     opacity: 0,
+    //     duration: 1,
+    //     ease: Power1,
+    // }, "hor2")
+    // .to ("#r3", {
+    //     opacity: 0,
+    //     duration: 1,
+    //     ease: Power1,
+    // }, "hor2")
+    // .to ("#r4", {
+    //     opacity: 0,
+    //     duration: 1,
+    //     ease: Power1,
+    // }, "hor2")
+    // .to ("#r5", {
+    //     opacity: 0,
+    //     duration: 1,
+    //     ease: Power1,
+    // }, "hor2")
+    
+    
+    // for row 2
+    
+    .to ("#stop .l", {
+        opacity: 1,
+        ease: Power1,
+    },)
+    .to ("#l1", {
+        left: "-15%",
+        duration: .5,
+        ease: Power1,
+    }, "hor2")
+    .to ("#l2", {
+        left: "5%",
+        duration: .5,
+        ease: Power1,
+    }, "hor2")
+    .to ("#l3", {
+        left: "25%",
+        duration: .5,
+        ease: Power1,
+    }, "hor2")
+    .to ("#l4", {
+        left: "45%",
+        duration: .5,
+        ease: Power1,
+    }, "hor2")
+    .to ("#l5", {
+        left: "65%",
+        duration: .5,
+        ease: Power1,
+    }, "hor2")
+}
+page2 ()
