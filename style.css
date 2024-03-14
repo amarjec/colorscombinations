@@ -118,7 +118,7 @@ html, body {
     width: 100%;
     /* height: 10vh; */
     /* background-color: red; */
-    z-index: 9999;
+    z-index: 999999;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -238,11 +238,13 @@ html, body {
     left: 50%;
     bottom: 2%;
     transform: translate(-50%, 0);
-    font-size: 10vw;
-    font-family: DS-Digital;
+    font-size: 8vw;
+    font-family: Scto Grotest A Medium;
+    text-transform: uppercase;
+    text-align: center;
     font-weight: 500;
     pointer-events: none;
-    letter-spacing: -.3vw;
+    letter-spacing: -.7vw;
 
     color: rgba(0, 0, 0, 0.821);
     z-index: 999999;
@@ -496,11 +498,138 @@ html, body {
 
 
 
-/* media Query */
+/*                               media Query  --------->      for mobile devices only                     */
 @media (max-width: 500px) { 
     @home {
         display: flex;
         flex-direction: coloum;
     }
-    
+    #overlay #nav, #page2 #nav {
+        padding: 8vw 5vw
+    }
+    #nav h1 {
+        font-size: 5vw;
+        line-height: 4.5vw;
+    }
+    #rnavt {
+        width: 24vw;
+        height: 4vw;
+    }
+    #r1nav {
+        width: 4vw;
+    }
+    #r2nav {
+        width: 4vw;
+    }
+    #r3nav {
+        width: 4vw;
+    }
+    #r4nav {
+        width: 4vw;
+    }
+    #r5nav {
+        width: 4vw;
+    }
+    #r6nav {
+        width: 4vw;
+    }
+    #rnavb {
+        height: 4vh;
+        width: 24vw;
+        padding: 1vh 1vw;
+    }
+    #rnav h6 {
+        font-size: 4vw;
+    }
+
+    #centerimg {
+        width: 50vw;
+        /* padding: 3vw 3vw; */
+    }
+    #centerimg img {
+        width: 110%;
+        height: 70%;
+    }
+    #centerimg h6 {
+        font-size: 5vw;
+        line-height: 4.5vw;
+    }
+    #centerimg h6:nth-child(1) {
+        margin-bottom: 3.5vw;
+    }
+    #centerimg h6:nth-child(3) {
+        margin-bottom: -3vw;
+    }
+    #pinkbox {
+        width: 60vw;
+        height: 60vw;
+        padding: 1vw 1vw;
+    }
+    #overlay #glry {
+        bottom: 10%;
+        font-size: 18vw;
+        letter-spacing: -1vw;
+        font-weight: 700;
+    }
+    #overlay>h1#pf {
+        width: 90%;
+        font-size: 15vw;
+        text-align: center;
+        letter-spacing: -.85vw;
+        font-weight: 700;
+    }
+    #gola {
+        width: 25vw;
+        height: 25vw;
+    }
+    #home #circle {
+        width: 250vw;
+        height: 250vw;
+    }
+    #smcircle {
+        width: 91vw;
+        height: 91vw;
+
+    }
+    #overlay #btmnav, #page2 #btmnav {
+        top: 94.5%;
+        padding: 1vw 2vw;
+    }
+    #btmnav img {
+        width: 25vw;
+    }
+    #stop .class {
+        display: flex;
+        width: 40vw;
+        height: 40vw;
+    }
+    #stop .pi {
+        left: 37%;
+    }
+    #stop .pu {
+        left: 67%;
+    }
+    #stop h1 {
+        font-size: 35vw;
+        font-weight: 500;
+    }
+    #stop .r {
+        top: 60%;                                
+        height: 40%;
+    }
+    #stop .l {
+        top: 80%;
+        height: 20%;
+    }
+    #sbtm p {
+        width: 95%;
+        font-size: 7vw;
+        line-height: 1;
+        letter-spacing: normal;
+        font-weight: 600;
+    }
+    #sbtm #n1, #n2, #n3 {
+        font-size: 20vw;
+        font-weight: 100;
+    }
 }
