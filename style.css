@@ -239,7 +239,6 @@ html, body {
     bottom: 2%;
     transform: translate(-50%, 0);
     font-size: 8vw;
-    font-family: Scto Grotest A Medium;
     text-transform: uppercase;
     text-align: center;
     font-weight: 500;
@@ -248,6 +247,9 @@ html, body {
 
     color: rgba(0, 0, 0, 0.821);
     z-index: 999999;
+}
+#overlay>h1#glry {
+    font-family: Scto Grotesk A Medium;
 }
 #gola {
     width: 5vw;
